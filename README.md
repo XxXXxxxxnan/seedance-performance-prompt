@@ -10,10 +10,16 @@
 
 ## 包含内容
 
-- 视角与表演载体对照表，以及载体转换规则
-- 物理条件库：温度天气、身体状态、特殊空间、心理状态，每项给出第一视角与面部特写写法
-- 提示词模板（总述 / 主角内心 / 全程物理状态 / 时间戳分段 / 表演控制 / 一致性 / 画质 / 声音）
-- 写作规则、调试对照表、自检清单
+- `SKILL.md`：工作流程、核心规则、提示词模板、输出格式、自检清单
+- `references/viewpoints.md`：视角与表演载体对照、载体转换规则、面部微表情词汇
+- `references/conditions.md`：物理条件库（温度天气、身体状态、特殊空间、心理状态）及因素相互作用
+- `references/debugging.md`：节奏、物理反应、画面一致性、平台审核的调试对照
+- `examples/`：5 个完整示例（输入 → 选择说明 → 提示词 → 测试观察点）
+  - 面部特写 · 老友提起已故母亲
+  - 第一视角 · 长征雪山捡起战友的红旗（含节奏修改过程）
+  - 第一视角·静 · 微山湖芦苇荡发现日军
+  - 第一视角·动 · 捷克式轻机枪扫射
+  - 第一视角·面对角色 · 白刃战
 
 ## 使用方法
 
@@ -25,5 +31,17 @@
 
 ```
 seedance-performance-prompt/
-└── SKILL.md
+├── SKILL.md
+├── references/
+│   ├── viewpoints.md
+│   ├── conditions.md
+│   └── debugging.md
+└── examples/
+    ├── 01-face-closeup-friend.md
+    ├── 02-pov-long-march-flag.md
+    ├── 03-pov-weishan-reeds.md
+    ├── 04-pov-machine-gun.md
+    └── 05-pov-bayonet-duel.md
 ```
+
+另附 `dist/seedance-performance-prompt-single.md`：把以上内容合并成单个 SKILL.md 的版本，适用于只支持单文件的平台。
